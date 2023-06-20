@@ -1,0 +1,19 @@
+<%- include("partials/header"); -%>
+
+
+
+<h1>Home</h1>
+<p><%= startingContent %></p>
+
+<!-- Add a button to go to the compose page -->
+<a href="/compose" class="btn btn-primary btn-lg">
+  <span class="button-text">Compose</span>
+  <span class="button-icon"><i class="fas fa-edit"></i></span>
+</a>
+
+<% posts.forEach(function(post) { %>
+  <h1><%= post.title %></h1>
+  <p><%= post.content.substring(0, 100) + " ..." %><a href="/posts/<%= post._id %>">Read More</a></p>
+<% }) %>
+
+<%- include("partials/footer"); -%>
