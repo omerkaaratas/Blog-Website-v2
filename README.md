@@ -2,8 +2,6 @@
 
 This is a simple blog website built using Node.js and Express.js. It allows users to create, view, and publish blog posts.
 
-Live Website: https://blog-website-v2-1-1.onrender.com
-
 
 ## Features
 
